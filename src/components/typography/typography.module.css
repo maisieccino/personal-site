@@ -1,0 +1,12 @@
+.text {
+  font-family: "Apercu", "arial", sans-serif;
+}
+
+.header {
+  composes: text;
+  font-size: 2rem;
+}
+
+.body {
+  composes: text;
+}
