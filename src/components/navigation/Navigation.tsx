@@ -7,10 +7,10 @@ import styles from "./navigation.module.css";
 const Navigation: FC = () => (
   <nav className={styles.navigation}>
     <Logo />
-    <Item>Test</Item>
-    <Item>Test</Item>
-    <Item>Test</Item>
-    <Item>Test</Item>
+    <Item>Home</Item>
+    <Item>Blog</Item>
+    <Item>Data</Item>
+    <Item>Projects</Item>
   </nav>
 );
 
