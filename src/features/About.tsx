@@ -3,15 +3,14 @@ import React, { Component, ReactNode } from "react";
 import { Page } from "../components/layout";
 import { Body } from "../components/typography";
 
-class Home extends Component {
+class About extends Component {
   render(): ReactNode {
     return (
-      <Page title="Matt Bell">
-        <Body>Work in progress. 🚧</Body>
-        <Body>Come back some time soon.</Body>
+      <Page title="About">
+        <Body>About</Body>
       </Page>
     );
   }
 }
 
-export default Home;
+export default About;

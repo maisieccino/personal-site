@@ -3,10 +3,10 @@ import React, { Component, ReactNode } from "react";
 import { Page } from "../components/layout";
 import { Body } from "../components/typography";
 
-class Home extends Component {
+class Data extends Component {
   render(): ReactNode {
     return (
-      <Page title="Matt Bell">
+      <Page title="Data">
         <Body>Work in progress. 🚧</Body>
         <Body>Come back some time soon.</Body>
       </Page>
@@ -14,4 +14,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Data;

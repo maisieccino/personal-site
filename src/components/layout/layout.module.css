@@ -1,0 +1,19 @@
+.page {
+  padding: 2rem var(--var-page-padding-horz) 5rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  .page {
+    background: #000;
+  }
+}

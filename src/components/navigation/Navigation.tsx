@@ -8,9 +8,9 @@ const Navigation: FC = () => (
   <nav className={styles.navigation}>
     <Logo />
     <Item>Home</Item>
-    <Item>Blog</Item>
+    <Item>About</Item>
     <Item>Data</Item>
-    <Item>Projects</Item>
+    <Item>Blog</Item>
   </nav>
 );
 

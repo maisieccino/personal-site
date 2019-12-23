@@ -10,17 +10,20 @@
   background-color: rgba(255, 255, 255, 0.6);
   max-height: 5rem;
   backdrop-filter: blur(20px);
+  padding: 0 var(--var-page-padding-horz);
 }
 @media (prefers-color-scheme: dark) {
   .navigation {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(30, 30, 30, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
 
 .logo {
   width: 4rem;
   height: 4rem;
-  padding: 0.5rem;
+  padding: 0.5rem 0;
+  display: none;
 }
 .logo * {
   fill: #000;
@@ -28,6 +31,11 @@
 @media (prefers-color-scheme: dark) {
   .logo * {
     fill: #fff;
+  }
+}
+@media (min-width: 480px) {
+  .logo {
+    display: block;
   }
 }
 
@@ -39,7 +47,7 @@
   flex: 1;
   text-align: center;
   padding: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
   color: #000;
@@ -48,5 +56,10 @@
   .item {
     color: #fff;
     font-weight: normal;
+  }
+}
+@media (min-width: 480px) {
+  .item {
+    font-size: 1.5rem;
   }
 }

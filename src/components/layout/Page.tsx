@@ -1,6 +1,8 @@
 import React, { FC, useEffect, useState } from "react";
 
-import { Header } from "../typography";
+import { Title } from "../typography";
+
+import styles from "./layout.module.css";
 
 interface pageProps {
   title?: string;
@@ -21,8 +23,8 @@ const Page: FC<pageProps> = ({ children, title = "" }) => {
     };
   });
   return (
-    <article>
-      {title && <Header>{title}</Header>}
+    <article className={styles.page}>
+      {title && <Title>{title}</Title>}
       {children}
     </article>
   );

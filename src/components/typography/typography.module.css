@@ -1,5 +1,11 @@
 .text {
   font-family: "Apercu", "arial", sans-serif;
+  color: #000;
+}
+@media (prefers-color-scheme: dark) {
+  .text {
+    color: #fff;
+  }
 }
 
 .header {
@@ -7,6 +13,13 @@
   font-size: 2rem;
 }
 
+.title {
+  composes: text;
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+
 .body {
   composes: text;
+  margin: 0.2rem 0;
 }
