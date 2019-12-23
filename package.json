@@ -46,5 +46,10 @@
     "@storybook/addons": "^5.2.8",
     "@storybook/react": "^5.2.8",
     "gh-pages": "^2.1.1"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "!src/**/*.stories.{js,jsx,ts,tsx}"
+    ]
   }
 }
