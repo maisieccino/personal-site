@@ -2,7 +2,7 @@
   "name": "site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "mbell.dev",
+  "homepage": "https://mbell.dev",
   "dependencies": {
     "@types/jest": "24.0.23",
     "@types/node": "12.12.14",
