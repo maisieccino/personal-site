@@ -1,10 +1,11 @@
 import React, { FC } from "react";
+import { Link } from "react-router-dom";
 import styles from "./navigation.module.css";
 
-const Item: FC<{ href?: string }> = ({ children, href = "#" }) => (
-  <a href={href} className={styles.item}>
+const Item: FC<{ to?: string }> = ({ children, to = "#" }) => (
+  <Link to={to} className={styles.item}>
     {children}
-  </a>
+  </Link>
 );
 
 export default Item;
