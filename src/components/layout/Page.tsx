@@ -1,4 +1,5 @@
 import React, { FC, useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 import { Title } from "../typography";
 
@@ -9,21 +10,11 @@ interface pageProps {
 }
 
 const Page: FC<pageProps> = ({ children, title = "" }) => {
-  const [docTitle, _] = useState(document.title);
-
-  useEffect(() => {
-    if (title !== "") {
-      document.title = `${title} - Matt Bell`;
-    } else {
-      document.title = docTitle;
-    }
-
-    return () => {
-      document.title = docTitle;
-    };
-  });
   return (
     <article className={styles.page}>
+      <Helmet>
+        <title>{title && `${title} -`} Matt Bell</title>
+      </Helmet>
       {title && <Title>{title}</Title>}
       {children}
     </article>
