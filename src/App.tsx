@@ -8,7 +8,7 @@ import { Home, About, Data, Blog } from "./features";
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/about">
             <About />
