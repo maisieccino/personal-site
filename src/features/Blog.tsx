@@ -6,9 +6,13 @@ import { Body } from "../components/typography";
 class Home extends Component {
   render(): ReactNode {
     return (
-      <Page title="Matt Bell">
+      <Page title="Blog">
         <Body>Work in progress. 🚧</Body>
-        <Body>Come back some time soon.</Body>
+        <Body>One day this will forward you to the blog</Body>
+        <Body>
+          For now, there's just{" "}
+          <a href="https://blog.mbell.dev/">this hyperlink.</a>
+        </Body>
       </Page>
     );
   }
