@@ -13,7 +13,6 @@ interface pageProps {
 }
 
 const Page: FC<pageProps> = ({ children, title = "", match }) => {
-  console.log(match != null ? match : `not ${title}`);
   return (
     <CSSTransition
       in={match != null}
