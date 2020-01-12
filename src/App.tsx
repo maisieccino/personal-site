@@ -1,31 +1,29 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 
 import { Navigation } from "./components/navigation";
 import { Home, About, Data, Blog, Uses } from "./features";
 
+const routes = [
+  { path: "/about", component: About },
+  { path: "/uses", component: Uses },
+  { path: "/data", component: Data },
+  { path: "/blog", component: Blog },
+  { path: "/", component: Home }
+];
+
 const App: React.FC = () => {
   return (
     <div className="App">
       <Router basename={process.env.PUBLIC_URL}>
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/uses">
-            <Uses />
-          </Route>
-          <Route path="/data">
-            <Data />
-          </Route>
-          <Route path="/blog">
-            <Blog />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+        <div className="container">
+          {routes.map(route => (
+            <Route exact path={route.path}>
+              {({ _ }) => <route.component />}
+            </Route>
+          ))}
+        </div>
         <Navigation></Navigation>
       </Router>
     </div>
