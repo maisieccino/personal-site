@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
 import { Navigation } from "./components/navigation";
-import { Home, About, Data, Blog } from "./features";
+import { Home, About, Data, Blog, Uses } from "./features";
 
 const App: React.FC = () => {
   return (
@@ -12,6 +12,9 @@ const App: React.FC = () => {
         <Switch>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/uses">
+            <Uses />
           </Route>
           <Route path="/data">
             <Data />
