@@ -8,7 +8,12 @@ class Home extends Component {
     return (
       <Page>
         <Title>Matt Bell</Title>
-        <Body>Work in progress. 🚧</Body>
+        <Body>
+          Work in progress.{" "}
+          <span role="img" aria-label="construction barrier">
+            🚧
+          </span>{" "}
+        </Body>
         <Body>Come back some time soon.</Body>
       </Page>
     );
