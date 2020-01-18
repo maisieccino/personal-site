@@ -4,6 +4,28 @@
 
   /* Defines the padding above page content. */
   --var-page-padding-top: 3rem;
+  background: #fff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    background: #000;
+  }
+}
+
+@font-face {
+  font-family: "A";
+  font-weight: normal;
+  src: url("./assets/fonts/A.otf");
+}
+@font-face {
+  font-family: "A";
+  font-weight: bold;
+  src: url("./assets/fonts/A-Bold.otf");
+}
+@font-face {
+  font-family: "A";
+  font-weight: lighter;
+  src: url("./assets/fonts/A-Light.otf");
 }
 
 .container {
