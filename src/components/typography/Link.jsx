@@ -8,8 +8,13 @@ export const ExternalLink = ({ children, to }) => (
   </a>
 );
 
-export default ({ children, to }) => (
-  <RRLink to={to} className={styles.link}>
-    {children}
-  </RRLink>
-);
+export default ({ children, to }) => {
+  if (to.match(/^http/)) {
+    return <ExternalLink to={to}>{children}</ExternalLink>;
+  }
+  return (
+    <RRLink to={to} className={styles.link}>
+      {children}
+    </RRLink>
+  );
+};

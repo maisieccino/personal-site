@@ -2,7 +2,7 @@ import React, { Component, useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import { Page } from "../components/layout";
-import { Body, ExternalLink } from "../components/typography";
+import { Body, Link } from "../components/typography";
 import { Card, CardHeader, CardBody } from "../components/layout/Card";
 
 const playlistURL =
@@ -37,9 +37,8 @@ const Music = () => {
     <Page title="Music">
       <Body>What I'm listening to.</Body>
       <Body>
-        A list of songs from my{" "}
-        <ExternalLink to={playlistURL}>Daily Rotation</ExternalLink> playlist on
-        Spotify.
+        A list of songs from my <Link to={playlistURL}>Daily Rotation</Link>{" "}
+        playlist on Spotify. It's updated every few weeks.
       </Body>
       {isLoading ? (
         <Body>Loading...</Body>
