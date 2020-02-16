@@ -1,14 +1,18 @@
 import React from "react";
 
-import { Grid, Page } from "../components/layout";
+import { Grid } from "../components/layout";
+import { Page } from "../components/layout/Page";
+import { Body } from "../components/typography";
+import { withKnobs, text } from "@storybook/addon-knobs";
 
 export default {
-  title: "Layout"
+  title: "Layout",
+  decorators: [withKnobs]
 };
 
 export const page = () => (
-  <Page>
-    <p>Foo</p>
+  <Page title={text("Title", "Some Page")}>
+    <Body>Foo</Body>
   </Page>
 );
 

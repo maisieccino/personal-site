@@ -17,6 +17,9 @@
     background: #000;
   }
 }
+.paddedPage {
+  padding: 3rem;
+}
 
 .page-enter {
   opacity: 0;

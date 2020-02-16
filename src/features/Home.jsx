@@ -1,10 +1,10 @@
-import React, { Component, ReactNode } from "react";
+import React, { Component } from "react";
 
 import { Page } from "../components/layout";
 import { Title, Body } from "../components/typography";
 
 class Home extends Component {
-  render(): ReactNode {
+  render() {
     return (
       <Page>
         <Title>Matt Bell</Title>

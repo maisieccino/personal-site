@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
+import "./assets/dracula-prism.css";
 
 import { Navigation } from "./components/navigation";
 import { Home, About, Data, Blog, Uses } from "./features";

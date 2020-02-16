@@ -1,7 +1,9 @@
 import React from "react";
 import { text, withKnobs } from "@storybook/addon-knobs";
 
-import { Body, Header } from "../components/typography";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Body, Header, Link } from "../components/typography";
+import Background from "./Background";
 
 export default {
   title: "Typography",
@@ -9,12 +11,25 @@ export default {
 };
 
 export const header = () => (
-  <Header>{text("Content", "Example Header")}</Header>
+  <Background>
+    <Header>{text("Content", "Example Header")}</Header>
+  </Background>
 );
 
 export const body = () => (
-  <Body>
-    Example body text. <i>Italics</i> <u>Underline</u> <a href="#">Link</a>{" "}
-    <strong>Bold</strong>
-  </Body>
+  <Background>
+    <Body>
+      Example body text. <i>Italics</i> <u>Underline</u> <strong>Bold</strong>
+    </Body>
+  </Background>
+);
+
+export const link = () => (
+  <Router>
+    <Background>
+      <Body>
+        <Link to={{}}>{text("Link content", "blog")}</Link>
+      </Body>
+    </Background>
+  </Router>
 );

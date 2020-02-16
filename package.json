@@ -4,10 +4,13 @@
   "private": true,
   "homepage": "https://mbell.dev",
   "dependencies": {
+    "@mdx-js/react": "^1.5.5",
     "@types/jest": "24.0.23",
     "@types/node": "12.12.14",
     "@types/react": "16.9.13",
     "@types/react-dom": "16.9.4",
+    "babel-loader": "^8.0.6",
+    "mdx-loader": "^3.0.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
@@ -54,6 +57,9 @@
   "jest": {
     "collectCoverageFrom": [
       "!src/**/*.stories.{js,jsx,ts,tsx}"
-    ]
+    ],
+    "moduleNameMapper": {
+      "\\.md$": "<rootDir>/__mocks__/fileMock.js"
+    }
   }
 }

@@ -1,18 +1,30 @@
 import React, { FC, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
+import { MDXProvider } from "@mdx-js/react";
 import { CSSTransition } from "react-transition-group";
 import { withRouter } from "react-router";
 
-import { Title } from "../typography";
+import { Title, Body, Link } from "../typography";
 
 import styles from "./layout.module.css";
 
+const mdxMapping = {
+  h1: Title,
+  p: Body,
+  a: ({ children, href }) => <Link to={href}>{children}</Link>
+};
 interface pageProps {
   title?: string;
   match?: Object;
+  padding?: boolean;
 }
 
-const Page: FC<pageProps> = ({ children, title = "", match }) => {
+export const Page: FC<pageProps> = ({
+  children,
+  title = "",
+  match = {},
+  padding = false
+}) => {
   return (
     <CSSTransition
       in={match != null}
@@ -26,15 +38,17 @@ const Page: FC<pageProps> = ({ children, title = "", match }) => {
         exitActive: styles["page-exit-active"]
       }}
     >
-      <article className={styles.page}>
+      <article
+        className={[styles.page, padding && styles.paddedPage].join(" ")}
+      >
         <Helmet>
           <title>{title && `${title} -`} Matt Bell</title>
         </Helmet>
         {title && <Title>{title}</Title>}
-        {children}
+        <MDXProvider components={mdxMapping}>{children}</MDXProvider>
       </article>
     </CSSTransition>
   );
 };
 
-export default withRouter(Page);
+export const RoutedPage = withRouter(Page);
