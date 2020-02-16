@@ -4,7 +4,7 @@ import "./App.css";
 import "./assets/dracula-prism.css";
 
 import { Navigation } from "./components/navigation";
-import { Home, About, Data, Blog, Uses } from "./features";
+import { Home, About, Data, Blog, Uses, NotFound } from "./features";
 
 const routes = [
   { path: "/about", component: About },
@@ -19,8 +19,8 @@ const App = () => {
     <div className="App">
       <Router basename={process.env.PUBLIC_URL}>
         <div className="container">
-          {routes.map(route => (
-            <Route exact path={route.path}>
+          {routes.map((route, i) => (
+            <Route key={i} exact path={route.path}>
               {({ _ }) => <route.component />}
             </Route>
           ))}
