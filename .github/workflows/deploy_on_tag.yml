@@ -17,7 +17,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install packages
-      run: yarn --pure-lockfile
+      run: yarn --pure-lockfile -D
     - name: Build and deploy
       run: |
         git config --global user.email "matt@mbell.me"
