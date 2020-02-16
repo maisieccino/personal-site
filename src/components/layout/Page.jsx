@@ -13,18 +13,8 @@ const mdxMapping = {
   p: Body,
   a: ({ children, href }) => <Link to={href}>{children}</Link>
 };
-interface pageProps {
-  title?: string;
-  match?: Object;
-  padding?: boolean;
-}
 
-export const Page: FC<pageProps> = ({
-  children,
-  title = "",
-  match = {},
-  padding = false
-}) => {
+export const Page = ({ children, title = "", match = {}, padding = false }) => {
   return (
     <CSSTransition
       in={match != null}

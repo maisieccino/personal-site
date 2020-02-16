@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import "./assets/dracula-prism.css";
 
@@ -14,7 +14,7 @@ const routes = [
   { path: "/", component: Home }
 ];
 
-const App: React.FC = () => {
+const App = () => {
   return (
     <div className="App">
       <Router basename={process.env.PUBLIC_URL}>

@@ -1,8 +1,8 @@
-import React, { FC } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./navigation.module.css";
 
-const Item: FC<{ to?: string }> = ({ children, to = "#" }) => {
+const Item = ({ children, to = "#" }) => {
   return (
     <NavLink
       exact
