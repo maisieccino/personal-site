@@ -1,12 +1,9 @@
-import React, { FC, useEffect, useState } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import { MDXProvider } from "@mdx-js/react";
-import { CSSTransition } from "react-transition-group";
-import { withRouter } from "react-router";
+import styles from "./layout.module.css";
 
 import { Title, Body, Link } from "../typography";
-
-import styles from "./layout.module.css";
 
 const mdxMapping = {
   h1: Title,
@@ -14,31 +11,16 @@ const mdxMapping = {
   a: ({ children, href }) => <Link to={href}>{children}</Link>
 };
 
-export const Page = ({ children, title = "", match = {}, padding = false }) => {
+const Page = ({ children, title = "", match = {}, padding = false }) => {
   return (
-    <CSSTransition
-      in={match != null}
-      timeout={300}
-      mountOnEnter
-      unmountOnExit
-      classNames={{
-        enter: styles["page-enter"],
-        enterActive: styles["page-enter-active"],
-        exit: styles["page-exit"],
-        exitActive: styles["page-exit-active"]
-      }}
-    >
-      <article
-        className={[styles.page, padding && styles.paddedPage].join(" ")}
-      >
-        <Helmet>
-          <title>{title && `${title} -`} Matt Bell</title>
-        </Helmet>
-        {title && <Title>{title}</Title>}
-        <MDXProvider components={mdxMapping}>{children}</MDXProvider>
-      </article>
-    </CSSTransition>
+    <article className={[styles.page, padding && styles.paddedPage].join(" ")}>
+      <Helmet>
+        <title>{title && `${title} -`} Matt Bell</title>
+      </Helmet>
+      {title && <Title>{title}</Title>}
+      <MDXProvider components={mdxMapping}>{children}</MDXProvider>
+    </article>
   );
 };
 
-export const RoutedPage = withRouter(Page);
+export default Page;
