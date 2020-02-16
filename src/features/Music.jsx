@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import { Page } from "../components/layout";
@@ -21,16 +21,15 @@ const Music = () => {
   const [songs, setSongs] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  // Fetch the list of songs.
+  // Fetch the list of songs from the API.
   useEffect(() => {
-    const inner = async () => {
+    (async () => {
       setIsLoading(true);
       const res = await fetch(apiURL);
       const json = await res.json();
       setSongs(json.tracks);
       setIsLoading(false);
-    };
-    inner();
+    })();
   }, [location]);
 
   return (
@@ -43,7 +42,7 @@ const Music = () => {
       {isLoading ? (
         <Body>Loading...</Body>
       ) : (
-        songs.map(song => <Song {...song} />)
+        songs.map((song, i) => <Song key={i} {...song} />)
       )}
     </Page>
   );
