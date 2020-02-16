@@ -9,7 +9,7 @@ class Data extends Component {
       <Page title="Data">
         <Header>Music</Header>
         <Body>
-          What I'm listening to. <Link to="/music">View</Link>{" "}
+          What I'm listening to. <Link to="/data/music">View</Link>{" "}
         </Body>
       </Page>
     );
