@@ -1,13 +1,12 @@
-import React, { Component, ReactNode } from "react";
+import React, { Component } from "react";
 
 import { Page } from "../components/layout";
-import { Body } from "../components/typography";
 
 /* eslint-disable import/no-webpack-loader-syntax */
 import Document from "!babel-loader!mdx-loader!./blog.md";
 
 class Home extends Component {
-  render(): ReactNode {
+  render() {
     return (
       <Page title="Blog">
         <Document />
