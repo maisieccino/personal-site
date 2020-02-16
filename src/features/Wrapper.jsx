@@ -8,13 +8,15 @@ import About from "./About";
 import Data from "./Data";
 import Blog from "./Blog";
 import Uses from "./Uses";
+import Music from "./Music";
 import NotFound from "./NotFound";
 
 const routes = [
   { path: "/about", component: About },
-  { path: "/uses", component: Uses },
-  { path: "/data", component: Data },
   { path: "/blog", component: Blog },
+  { path: "/data/music", component: Music },
+  { path: "/data", component: Data },
+  { path: "/uses", component: Uses },
   { path: "/", component: Home, exact: true }
 ];
 export default () => {
