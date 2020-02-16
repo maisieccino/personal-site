@@ -9,6 +9,13 @@ const playlistURL =
   "https://open.spotify.com/playlist/70L5dD8ppo1xeIJoUg8Ehz?si=p2_lCxxyS86A782Uf_iFiQ";
 const apiURL = "https://mbell-api.glitch.me/music/";
 
+const Song = ({ artists = [], name = "" }) => (
+  <Card>
+    <CardHeader>{artists.map(artist => artist.name).join(", ")}</CardHeader>
+    <CardBody>{name}</CardBody>
+  </Card>
+);
+
 const Music = () => {
   const location = useLocation();
   const [songs, setSongs] = useState([]);
@@ -21,6 +28,7 @@ const Music = () => {
       const res = await fetch(apiURL);
       const json = await res.json();
       setSongs(json.tracks);
+      setIsLoading(false);
     };
     inner();
   }, [location]);
@@ -33,12 +41,11 @@ const Music = () => {
         <ExternalLink to={playlistURL}>Daily Rotation</ExternalLink> playlist on
         Spotify.
       </Body>
-      {songs.map(song => (
-        <Card>
-          <CardHeader>{song.artists.map(a => a.name).join(", ")}</CardHeader>
-          <CardBody>{song.name}</CardBody>
-        </Card>
-      ))}
+      {isLoading ? (
+        <Body>Loading...</Body>
+      ) : (
+        songs.map(song => <Song {...song} />)
+      )}
     </Page>
   );
 };
