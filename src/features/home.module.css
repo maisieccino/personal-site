@@ -1,0 +1,23 @@
+.page h1 {
+  background: linear-gradient(135deg, #258ea6 20%, #1ed889);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: calc(100vw / 3);
+  word-spacing: 100vw;
+  font-family: "AMono";
+}
+@media (min-width: 480px) {
+  .page h1 {
+    font-size: calc(100vh / 4);
+  }
+}
+.page h1,
+.page h2,
+.page h3,
+.page p {
+  text-align: center;
+}
+.page p {
+  font-size: 1.5rem;
+}

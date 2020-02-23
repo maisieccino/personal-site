@@ -1,5 +1,5 @@
 .page {
-  padding: 2rem var(--var-page-padding-horz) 5rem;
+  padding: var(--var-page-padding-top) var(--var-page-padding-horz) 5rem;
   overflow-y: auto;
   overflow-x: hidden;
 
@@ -16,6 +16,36 @@
   .page {
     background: #000;
   }
+}
+.page pre {
+  background-color: rgb(40, 41, 54);
+  font-family: "AMono";
+  position: relative;
+}
+.page pre:after {
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(40, 41, 54, 0) 80%, rgb(51, 53, 68) 95%);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  content: "";
+  pointer-events: none;
+}
+@media (min-width: 480px) {
+  .page pre:after {
+    content: none;
+  }
+}
+.page pre code {
+  margin: 1rem;
+  margin-right: 2rem;
+  overflow-y: visible;
+  overflow-x: auto;
+  max-width: 100%;
+  display: block;
+  box-sizing: border-box;
 }
 .paddedPage {
   padding: 3rem;

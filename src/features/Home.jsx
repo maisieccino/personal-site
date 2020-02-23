@@ -3,18 +3,15 @@ import React, { Component } from "react";
 import { Page } from "../components/layout";
 import { Title, Body } from "../components/typography";
 
+import Styles from "./home.module.css";
+
 class Home extends Component {
   render() {
     return (
-      <Page>
+      <Page className={Styles.page}>
         <Title>Matt Bell</Title>
-        <Body>
-          Work in progress.{" "}
-          <span role="img" aria-label="construction barrier">
-            🚧
-          </span>{" "}
-        </Body>
-        <Body>Come back some time soon.</Body>
+        <Body>Software Engineer</Body>
+        <Body>London, UK</Body>
       </Page>
     );
   }

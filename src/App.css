@@ -1,14 +1,20 @@
 :root {
   /* Defines the gutters on the side of the page. */
-  --var-page-padding-horz: 3rem;
+  --var-page-padding-horz: 1rem;
 
   /* Defines the padding above page content. */
-  --var-page-padding-top: 3rem;
+  --var-page-padding-top: 1rem;
   background: #fff;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     background: #000;
+  }
+}
+@media (min-width: 480px) {
+  :root {
+    --var-page-padding-horz: 5rem;
+    --var-page-padding-top: 3rem;
   }
 }
 
@@ -26,6 +32,11 @@
   font-family: "A";
   font-weight: lighter;
   src: url("./assets/fonts/A-Light.otf");
+}
+@font-face {
+  font-family: "AMono";
+  font-weight: normal;
+  src: url("./assets/fonts/A-Mono.otf");
 }
 
 .container {
