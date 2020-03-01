@@ -4,6 +4,8 @@
 
   /* Defines the padding above page content. */
   --var-page-padding-top: 1rem;
+
+  --var-primary-gradient: linear-gradient(135deg, #258ea6 20%, #1ed889);
   background: #fff;
 }
 @media (prefers-color-scheme: dark) {

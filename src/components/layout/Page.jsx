@@ -3,14 +3,22 @@ import { Helmet } from "react-helmet";
 import { MDXProvider } from "@mdx-js/react";
 import styles from "./layout.module.css";
 
-import { Title, Body, Link, SubHeader, Header } from "../typography";
+import {
+  Title,
+  BlockQuote,
+  Body,
+  Link,
+  SubHeader,
+  Header
+} from "../typography";
 
 const mdxMapping = {
   h1: Title,
   h2: Header,
   h3: SubHeader,
   p: Body,
-  a: ({ children, href }) => <Link to={href}>{children}</Link>
+  a: ({ children, href }) => <Link to={href}>{children}</Link>,
+  blockquote: BlockQuote
 };
 
 const Page = ({

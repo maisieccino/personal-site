@@ -1,5 +1,5 @@
 .page h1 {
-  background: linear-gradient(135deg, #258ea6 20%, #1ed889);
+  background: var(--var-primary-gradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

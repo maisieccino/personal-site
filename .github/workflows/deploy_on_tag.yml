@@ -20,6 +20,7 @@ jobs:
       run: yarn --pure-lockfile --dev
     - name: Build and deploy
       run: |
+        export REACT_APP_VERSION=$(git tag -l --sort=-v:refname | head -n1)
         git config --global user.email "matt@mbell.me"
         git config --global user.name "GitHub Actions on behalf of Matt Bell"
         git remote set-url origin https://${{secrets.GITHUB_ACCESS_TOKEN}}@github.com/mbellgb/personal-site.git
