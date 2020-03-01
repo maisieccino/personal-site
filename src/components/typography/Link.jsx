@@ -3,7 +3,7 @@ import { Link as RRLink } from "react-router-dom";
 import styles from "./typography.module.css";
 
 export const ExternalLink = ({ children, to }) => (
-  <a className={styles.link} href={to} target="_">
+  <a className={styles.link} href={to}>
     {children}
   </a>
 );
