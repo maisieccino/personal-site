@@ -1,12 +1,16 @@
-.text {
-  display: inline;
+.textBase {
   font-family: "A", "arial", sans-serif;
   color: #000;
 }
 @media (prefers-color-scheme: dark) {
-  .text {
+  .textBase {
     color: #fff;
   }
+}
+
+.text {
+  composes: textBase;
+  display: inline;
 }
 
 .title {
@@ -81,4 +85,9 @@
 }
 .blockQuote > * {
   display: block;
+}
+
+.li {
+  composes: textBase;
+  margin-top: 0.5rem;
 }

@@ -9,7 +9,8 @@ import {
   Body,
   Link,
   SubHeader,
-  Header
+  Header,
+  ListItem
 } from "../typography";
 
 const mdxMapping = {
@@ -18,7 +19,8 @@ const mdxMapping = {
   h3: SubHeader,
   p: Body,
   a: ({ children, href }) => <Link to={href}>{children}</Link>,
-  blockquote: BlockQuote
+  blockquote: BlockQuote,
+  li: ListItem
 };
 
 const Page = ({

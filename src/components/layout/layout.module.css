@@ -19,6 +19,7 @@
 }
 .page pre {
   background-color: rgb(40, 41, 54);
+  color: white;
   font-family: "AMono";
   position: relative;
 }
@@ -74,13 +75,62 @@
 }
 
 .card {
+  margin: 0.5rem 0;
   padding: 5px;
-  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: 5rem auto;
+  grid-template-rows: auto auto;
+  column-gap: 0.5rem;
+}
+@media (min-width: 480px) {
+  .card {
+    column-gap: 1rem;
+  }
+}
+.card-trans-base {
+  transition: all 0.2s ease-in-out;
+}
+.card-enter {
+  opacity: 0;
+  transform: translateY(-2rem);
+}
+.card-enter-active,
+.card-exit {
+  composes: card-trans-base;
+  transform: translateY(0);
+  opacity: 1;
+}
+.card-exit-active {
+  composes: card-trans-base;
+  transform: translateY(2rem);
+  opacity: 0;
+}
+
+.cardHeader,
+.cardBody {
+  grid-column-start: 2;
+  grid-row-start: 0;
 }
 
 .cardImage {
+  position: relative;
   width: 5rem;
   height: 5rem;
   background-size: cover;
   border-radius: 50%;
+  grid-column-start: span 1;
+  grid-row-start: span 2;
+  justify-self: center;
+}
+.cardImage:after {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background: var(--var-primary-gradient, blue);
+  border-radius: 50%;
+  opacity: 0.5;
 }
