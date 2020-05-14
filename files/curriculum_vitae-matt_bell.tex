@@ -1,0 +1,234 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage{mdwlist}
+\usepackage{fontspec}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\usepackage{titlesec}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+\setmainfont{Apercu}
+\setsansfont{Apercu-Mono}
+\titleformat*{\subsection}{\sffamily\Large}
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+% \includegraphics[scale=0.2]{./face2.jpg}\\
+{\Huge \sffamily{Matt Bell}}\\
+
+
+% \ \ Student at UCL  \textbullet
+% \ \ Flat 6 Holmdale Mansions\ \ \textbullet
+% \ \ London NW6 1BG
+% \ \ \faicon{github} mbellgb\ \ \textbullet\
+% \ \ \faicon{medium} @mbell\_gb\ \ \textbullet\
+% \ \ \faicon{twitter} @mbell\_gb\ \ \textbullet\
+% \\
+% +44 7827 638207\ \ \textbullet\
+\ \ matt@mbell.dev \textbullet\
+\ \ https://mbell.dev/ \textbullet\
+\ \ Twitter: @mbellgb
+\end{center}
+
+
+\hrule
+\vspace{-1.2em}
+\subsection*{Career}
+
+
+ \begin{itemize}
+ 	\parskip=0.1em
+
+ 	\item
+ 	\headerrow%
+ 		{\textbf{Limejump Ltd}}
+		{\textbf{London, UK}}
+ 	\\
+ 	\headerrow%
+ 		{\emph{Full Stack Developer}}
+ 		{\emph{Jun 2019 --- present}}
+ 	\begin{itemize*}
+	    \item Working on 10+ projects across the company, as part of the trading and operations team.
+	    \item Leading and mentoring the team on migrating from ECS + Salt stack to Kubernetes, including running interactive workshops and demos.
+	    \item Working multiple incident on-call rotas, getting exposure to the entire company's tech systems and fixing a wide array of issues.
+	    \item Maintaining Django and AngularJS projects, as well as building features for new Golang \& Flask microservices.
+	    \item Introduced new dev tools to the org: Kiali for monitoring service traffic and Jaeger for tracing requests from start to finish.
+	    \item Added stronger integration testing for the trading platform by creating Kubernetes clusters and testing on them as part of the deployment pipeline.
+ 	\end{itemize*}
+
+ 	\item
+ 	\headerrow%
+ 		{\textbf{State Street}}
+		{\textbf{London, UK}}
+ 	\\
+ 	\headerrow%
+ 		{\emph{Microservices Framework Engineer}}
+ 		{\emph{Jul 2018 --- May 2019}}
+ 	\begin{itemize*}
+	    \item Part of core engineering work to provide Kubernetes-as-a-service, to eventually be rolled out across the business
+	    \item Contributing to high level design of a highly-available, resilient platform as well as implementation details
+	    \item Rolled out and maintained developer tools (Concourse CI and Artifactory) for internal users
+	    \item Working amongst constraints of corporate and industry regulations to provide a secure, compliant framework for developers
+ 	\end{itemize*}
+
+	\item
+	\headerrow%
+		{\textbf{Interrodata}}
+		{\textbf{London, UK}}
+	\\
+	\headerrow%
+		{\emph{Frontend Development (Contractor)}}
+		{\emph{Aug 2017 --- Sep 2017}}
+	\begin{itemize*}
+	    \item Worked to integrate separate API backend (written in Python) with frontend app (written in React)
+	    \item Set up automated build pipeline, including testing and code linting/formatting
+	    \item Built new features for the frontend, including a sophisticated autocomplete system.
+	\end{itemize*}
+
+ 	\item
+ 	\headerrow%
+ 		{\textbf{Pip App}}
+		{\textbf{London, UK}}
+ 	\\
+ 	\headerrow%
+ 		{\emph{Backend Developer Intern (Contractor)}}
+ 		{\emph{Jun 2017 --- Jul 2017}}
+ 	\begin{itemize*}
+	    \item Setup cloud data store (Firebase) and built admin interface/sync tool using Node.JS
+	    \item Worked on integrating data into app, built on the React Native platform
+ 	\end{itemize*}
+
+ 	\item
+ 	\headerrow%
+ 		{\textbf{Netcraft}}
+		{\textbf{Bath, UK}}
+ 	\\
+ 	\headerrow%
+ 		{\emph{Internet Services Developer (Internship)}}
+ 		{\emph{Jun 2016 --- Sep 2016}}
+ 	\begin{itemize*}
+ 		\item Maintained production servers and supported devops work, as well as working as the primary on-call systems admin at times.
+		\item Develop new features for the company's systems including package version archiving and input validation for the fraud detection systems.
+		\item Helped to set up clients on the internal systems and write config files for them.
+ 	\end{itemize*}
+
+ \end{itemize}
+
+
+ \vspace{-0.4em}
+ \hrule
+ \vspace{-1.2em}
+ \subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow%
+		{\textbf{University College London}}
+		{\textbf{2:1 awarded}}\\
+	\headerrow%
+		{\emph{BSc Computer Science}}
+		{\emph{Sep 2015 --- Jul 2018}}
+
+\end{itemize}
+
+\vspace{-0.4em}
+\hrule
+\vspace{-1.2em}
+
+\subsection*{Technical Skills}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Languages:]
+	    Working experience: Go, Python, Javascript \& Typescript, YAML\\
+	    Intermediate: C
+	\item[Web Technologies:]
+	    Experience with popular web technologies such as Node.JS, React, and Django. Maintained Angular and Flask codebases.
+	\item[Data and networking:]
+	    Experience using database systems (PostgreSQL), web server software (Nginx, Apache, Istio), UNIX shells and continuous integration systems (Concourse, Jenkins, CircleCI, GitHub Actions). Limited knowledge of Kafka.
+	\item[DevOps:]
+	    Experience building, running and maintaining Kubernetes
+    	    services and cloud services, using provisioning tools like Ansible,
+    	    Terraform and Salt, and using monitoring tools like Prometheus, Grafana
+    	    and distributed tracing systems.
+\end{description*}
+\end{indentsection}
+
+% \vspace{-0.4em}
+% \hrule
+% \vspace{-1.2em}
+% \subsection*{Achievements}
+% \begin{indentsection}{\parindent}
+% \hyphenpenalty=1000
+% \begin{description*}
+%     \item[Facebook Capture The Flag Competition (Nov 2015):] Worked on systems-level problems; my team took second place.
+% 	\item[HackLondon II (Feb 2016):] Created a plugin for a text editor that allows gesture control, which won the GitHub developer prize.
+% \end{description*}
+% \end{indentsection}
+
+% \vspace{-0.4em}
+% \hrule
+% \vspace{-1.2em}
+% \subsection*{Volunteering and Hackathons}
+% \begin{indentsection}{\parindent}
+% \begin{description*}
+% 	\item[UCLU Technology Society:] Was a committee member from March to October 2016, and a member of the organising team for the CS50 Hackathon.
+% 	\item[Lauzhack 2016:] Travelled to Lausanne, Switzerland to volunteer/mentor at EPFL's hackathon. I helped with logistics and helped to fix attendees' projects.
+% 	\item[Porticode 2016:] Mentored at UCL's beginner-focussed hackathon, helping specifically with Node.js and Git.
+% 	\item[Hack The North 2017:] Travelled to Waterloo, Canada to hack with people from all over the world.
+% \end{description*}
+% \end{indentsection}
+\vspace{-0.4em}
+\hrule
+
+\vspace{-1.2em}
+\subsection*{Projects}
+\begin{indentsection}{\parindent}
+	More projects (plus source code) is available at https://mbell.me/projects.
+	\begin{description*}
+		\item[Healthcheck-Controller:] A Kubernetes controller to monitor service health (rather than pod health).
+		\item[Haul:] A service for storing notes, thoughts, and other free-form information. Built with Ruby on Rails.
+		\item[UCL Assistant:] An app to improve student life at university, using the UCL API to fetch timetables and study space availability.
+	\end{description*}
+\end{indentsection}
+
+\end{document}
