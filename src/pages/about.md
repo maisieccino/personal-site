@@ -18,7 +18,7 @@ the [Kubernetes](https://kubernetes.io) orchestration tool.
 
 ## Experience
 
-See my [CV](https://mbell.me/files/curriculum_vitae-matt_bell.pdf) for a formal
+See my <a isExternal href="/files/curriculum_vitae-matt_bell.pdf">CV</a> for a formal
 copy of my work experience, and my email (external link).
 
 ### Limejump Ltd.

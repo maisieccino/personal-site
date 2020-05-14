@@ -19,6 +19,7 @@ const routes = [
   { path: "/uses", component: Uses },
   { path: "/", component: Home, exact: true }
 ];
+
 export default () => {
   const location = useLocation();
   return (

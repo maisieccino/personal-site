@@ -8,6 +8,7 @@ import {
   BlockQuote,
   Body,
   Link,
+  ExternalLink,
   SubHeader,
   Header,
   ListItem
@@ -18,7 +19,10 @@ const mdxMapping = {
   h2: Header,
   h3: SubHeader,
   p: Body,
-  a: ({ children, href }) => <Link to={href}>{children}</Link>,
+  a: ({ children, href, isExternal }) =>
+    isExternal
+    ? <ExternalLink to={href}>{children}</ExternalLink>
+    : <Link to={href}>{children}</Link>,
   blockquote: BlockQuote,
   li: ListItem
 };
