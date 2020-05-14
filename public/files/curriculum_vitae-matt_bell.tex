@@ -26,7 +26,7 @@
 % opposite of above; bump a section back toward the left margin
 \newenvironment{unindentsection}[1]%
 {\begin{list}{}%
-	{\setlength{\leftmargin}{-0.75#1}}%
+	{\setlength{\leftmargin}{-#1}}%
 	\item[]%
 }
 {\end{list}}
@@ -70,8 +70,8 @@
 \subsection*{Career}
 
 
+\begin{unindentsection}{1.5em}
  \begin{itemize}
- 	\parskip=0.1em
 
  	\item
  	\headerrow%
@@ -81,7 +81,7 @@
  	\headerrow%
  		{\emph{Full Stack Developer}}
  		{\emph{Jun 2019 --- present}}
- 	\begin{itemize*}
+	\begin{itemize*}
 	    \item Working on 10+ projects across the company, as part of the trading and operations team.
 	    \item Leading and mentoring the team on migrating from ECS + Salt stack to Kubernetes, including running interactive workshops and demos.
 	    \item Working multiple incident on-call rotas, getting exposure to the entire company's tech systems and fixing a wide array of issues.
@@ -98,13 +98,27 @@
  	\headerrow%
  		{\emph{Microservices Framework Engineer}}
  		{\emph{Jul 2018 --- May 2019}}
- 	\begin{itemize*}
+	\begin{itemize*}
 	    \item Part of core engineering work to provide Kubernetes-as-a-service, to eventually be rolled out across the business
 	    \item Contributing to high level design of a highly-available, resilient platform as well as implementation details
 	    \item Rolled out and maintained developer tools (Concourse CI and Artifactory) for internal users
 	    \item Working amongst constraints of corporate and industry regulations to provide a secure, compliant framework for developers
  	\end{itemize*}
+
+ 	\item
+ 	\headerrow%
+ 		{\textbf{Bell Software Development}}
+		{\textbf{London, UK}}
+ 	\\
+ 	\headerrow%
+ 		{\emph{Various Contract Work}}
+ 		{\emph{Jul 2017 --Sep 2017}}
+ 	\begin{itemize*}
+	    \item Various contracting work with a couple of startups during a summer break during my degree
+	    \item Learned and used technologies like React, Firebase, and integrating data into a React Native app
+ 	\end{itemize*}
  \end{itemize}
+\end{unindentsection}
 
 
  \vspace{-0.4em}
@@ -112,6 +126,7 @@
  \vspace{-1.2em}
  \subsection*{Education}
 
+\begin{unindentsection}{1.5em}
 \begin{itemize}
 	\parskip=0.1em
 
@@ -124,28 +139,28 @@
 		{\emph{Sep 2015 --- Jul 2018}}
 
 \end{itemize}
+\end{unindentsection}
 
 \vspace{-0.4em}
 \hrule
 \vspace{-1.2em}
 
-\subsection*{Technical Skills}
+\subsection*{Skills}
 
 \begin{indentsection}{\parindent}
 \hyphenpenalty=1000
 \begin{description*}
-	\item[Languages:]
-	    Working experience: Go, Python, Javascript \& Typescript, YAML\\
-	    Intermediate: C
-	\item[Web Technologies:]
-	    Experience with popular web technologies such as Node.JS, React, and Django. Maintained Angular and Flask codebases.
-	\item[Data and networking:]
-	    Experience using database systems (PostgreSQL), web server software (Nginx, Apache, Istio), UNIX shells and continuous integration systems (Concourse, Jenkins, CircleCI, GitHub Actions). Limited knowledge of Kafka.
+	\item[Working experience with:]
+	    Go, Python, Javascript \& Typescript, YAML
+	\item[Web frameworks:]
+	    Node.JS, React, and Django. Maintained Angular and Flask codebases.
+	\item[Data and networking technologies:]
+	    PostgreSQL, Nginx, UNIX shells and continuous integration systems (Concourse, Jenkins, CircleCI, GitHub Actions). Limited knowledge of Kafka.
 	\item[DevOps:]
 	    Experience building, running and maintaining Kubernetes
-    	    services and cloud services, using provisioning tools like Ansible,
-    	    Terraform and Salt, and using monitoring tools like Prometheus, Grafana
-    	    and distributed tracing systems.
+            services and cloud services, using provisioning tools like Ansible,
+            Terraform and Salt, and using monitoring tools like Prometheus, Grafana
+            and distributed tracing systems. Experience with Istio.
 \end{description*}
 \end{indentsection}
 
