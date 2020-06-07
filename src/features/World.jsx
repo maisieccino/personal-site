@@ -21,6 +21,10 @@ const World = () => {
       globe: "https://unpkg.com/three-globe/example/img/earth-night.jpg",
       bg: "#000000",
     },
+    unset: {
+      globe: "https://unpkg.com/three-globe/example/img/earth-night.jpg",
+      bg: "#000000",
+    },
   });
   return (
     <Overlay>

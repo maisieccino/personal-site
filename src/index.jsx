@@ -1,3 +1,4 @@
+import "./setup.js";
 import React from "react";
 import { render } from "react-snapshot";
 import "./index.css";
