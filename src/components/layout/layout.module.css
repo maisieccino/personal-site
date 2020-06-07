@@ -25,7 +25,11 @@
 }
 .page pre:after {
   z-index: 1;
-  background: linear-gradient(90deg, rgba(40, 41, 54, 0) 80%, rgb(51, 53, 68) 95%);
+  background: linear-gradient(
+    90deg,
+    rgba(40, 41, 54, 0) 80%,
+    rgb(51, 53, 68) 95%
+  );
   position: absolute;
   left: 0;
   right: 0;
@@ -48,6 +52,17 @@
   display: block;
   box-sizing: border-box;
 }
+
+.overlayPage {
+  background: rgba(255, 255, 255, 0.4) !important;
+  backdrop-filter: blur(25px);
+}
+@media (prefers-color-scheme: dark) {
+  .page {
+    background: rgba(0, 0, 0, 0.4) !important;
+  }
+}
+
 .paddedPage {
   padding: 3rem;
 }
@@ -133,4 +148,10 @@
   background: var(--var-primary-gradient, blue);
   border-radius: 50%;
   opacity: 0.5;
+}
+
+.overlayHidden {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
 }

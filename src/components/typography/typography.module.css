@@ -51,6 +51,7 @@
   padding-bottom: 1px;
   border-bottom: solid 2px #000;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .link:hover {
   background-image: url("/underline-light.svg");

@@ -1,0 +1,16 @@
+.button {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.button p {
+  margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .button {
+    background-color: #000000;
+    border: 2px solid #ffffff;
+  }
+}

@@ -10,14 +10,16 @@ import Blog from "./Blog";
 import Uses from "./Uses";
 import Music from "./Music";
 import NotFound from "./NotFound";
+import World from "./World";
 
 const routes = [
   { path: "/about", component: About },
   { path: "/blog", component: Blog },
   { path: "/data/music", component: Music },
+  { path: "/data/world", component: World },
   { path: "/data", component: Data },
   { path: "/uses", component: Uses },
-  { path: "/", component: Home, exact: true }
+  { path: "/", component: Home, exact: true },
 ];
 
 export default () => {
@@ -32,7 +34,7 @@ export default () => {
             enter: styles["page-enter"],
             enterActive: styles["page-enter-active"],
             exit: styles["page-exit"],
-            exitActive: styles["page-exit-active"]
+            exitActive: styles["page-exit-active"],
           }}
         >
           <Switch location={location}>

@@ -11,6 +11,10 @@ class Data extends Component {
         <Body>
           What I'm listening to. <Link to="/data/music">View</Link>{" "}
         </Body>
+        <Header>World</Header>
+        <Body>
+          Places I've been. <Link to="/data/world">View</Link>
+        </Body>
         <Header>Beer</Header>
         <Body>Coming soon.</Body>
       </Page>

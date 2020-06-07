@@ -11,7 +11,7 @@ import {
   ExternalLink,
   SubHeader,
   Header,
-  ListItem
+  ListItem,
 } from "../typography";
 
 const mdxMapping = {
@@ -20,11 +20,13 @@ const mdxMapping = {
   h3: SubHeader,
   p: Body,
   a: ({ children, href, isExternal }) =>
-    isExternal
-    ? <ExternalLink to={href}>{children}</ExternalLink>
-    : <Link to={href}>{children}</Link>,
+    isExternal ? (
+      <ExternalLink to={href}>{children}</ExternalLink>
+    ) : (
+      <Link to={href}>{children}</Link>
+    ),
   blockquote: BlockQuote,
-  li: ListItem
+  li: ListItem,
 };
 
 const Page = ({
@@ -32,13 +34,15 @@ const Page = ({
   title = "",
   match = {},
   padding = false,
-  className = ""
+  className = "",
+  ...rest
 }) => {
   return (
     <article
       className={[styles.page, className, padding && styles.paddedPage].join(
         " "
       )}
+      {...rest}
     >
       <Helmet>
         <title>{title && `${title} -`} Matt Bell</title>
@@ -48,5 +52,11 @@ const Page = ({
     </article>
   );
 };
+
+export const OverlayPage = ({ children, className = "", ...props }) => (
+  <Page {...props} className={`${className} ${styles.overlayPage}`}>
+    {children}
+  </Page>
+);
 
 export default Page;
