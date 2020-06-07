@@ -11,12 +11,15 @@ import places, { DESTINATIONS, LONDON } from "./places";
 const modeVariables = {
   light: {
     globe: "https://unpkg.com/three-globe/example/img/earth-day.jpg",
+    fg: "red",
   },
   dark: {
     globe: "https://unpkg.com/three-globe/example/img/earth-night.jpg",
+    fg: "yellow",
   },
   unset: {
     globe: "https://unpkg.com/three-globe/example/img/earth-night.jpg",
+    fg: "yellow",
   },
 };
 
@@ -30,7 +33,7 @@ const World = () => {
   const modeStyle = useModeSelector(modeVariables);
 
   useEffect(() => {
-    globeEl.current.pointOfView({ lat: 26, lng: 3, altitude: 4 }, 4000);
+    globeEl.current.pointOfView({ lat: 46, lng: 3, altitude: 4 }, 4000);
   }, [location]);
 
   const arcs = DESTINATIONS.map((place) => ({
@@ -57,7 +60,9 @@ const World = () => {
         arcsData={arcs}
         arcDashLength={0.01}
         arcDashGap={0.02}
+        arcStroke={0.2}
         arcDashAnimateTime={4000}
+        arcColor={() => modeStyle.fg}
       ></Globe>
     </Overlay>
   );
