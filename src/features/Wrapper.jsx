@@ -6,6 +6,7 @@ import styles from "../components/layout/layout.module.css";
 import Home from "./Home";
 import About from "./About";
 import Data from "./Data";
+import Beers from "./Beers";
 import Blog from "./Blog";
 import Uses from "./Uses";
 import Music from "./Music";
@@ -16,6 +17,7 @@ const routes = [
   { path: "/about", component: About },
   { path: "/blog", component: Blog },
   { path: "/data/music", component: Music },
+  { path: "/data/beers", component: Beers },
   { path: "/data/world", component: World },
   { path: "/data", component: Data },
   { path: "/uses", component: Uses },
