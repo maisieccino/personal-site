@@ -31,10 +31,13 @@ const World = () => {
   const location = useLocation();
   const globeEl = useRef();
   const modeStyle = useModeSelector(modeVariables);
+  const shouldRenderGlobe = navigator.userAgent !== "ReactSnap";
 
-  useEffect(() => {
-    globeEl.current.pointOfView({ lat: 46, lng: 3, altitude: 4 }, 4000);
-  }, [location]);
+    useEffect(() => {
+        if (shouldRenderGlobe) {
+            globeEl.current.pointOfView({ lat: 46, lng: 3, altitude: 4 }, 4000);
+        }
+    }, [location, shouldRenderGlobe]);
 
   const arcs = DESTINATIONS.map((place) => ({
     startLat: LONDON.lat,
@@ -43,12 +46,13 @@ const World = () => {
     endLng: place.lng,
   }));
 
+
   return (
     <Overlay>
       <OverlayPage title="World">
         <Body>A list of places I've been.</Body>
       </OverlayPage>
-      <Globe
+      { shouldRenderGlobe && <Globe
         bumpImageUrl="https://unpkg.com/three-globe/example/img/earth-topology.png"
         globeImageUrl={modeStyle.globe}
         backgroundColor="rgba(0,0,0,0)"
@@ -63,7 +67,7 @@ const World = () => {
         arcStroke={0.2}
         arcDashAnimateTime={4000}
         arcColor={() => modeStyle.fg}
-      ></Globe>
+      ></Globe>}
     </Overlay>
   );
 };
