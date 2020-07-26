@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import { Page } from "../components/layout";
@@ -9,11 +9,11 @@ import Document from "!babel-loader!mdx-loader!../pages/blog.md";
 
 const apiURL = "https://mbell-api.glitch.me/posts/";
 
-const Post = ({ title, excerpt, url }) => <section style={{display: "flex", flexDirection: "column"}}>
+const Post = ({ title, excerpt, url }) => <Fragment>
   <SubHeader>{title}</SubHeader>
   <Body>{excerpt}</Body>
   <Body><Link to={url}>Read more</Link></Body>
-</section>
+</Fragment>
 
 const Home = () => {
   const location = useLocation();
