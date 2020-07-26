@@ -9,7 +9,7 @@ class Home extends Component {
   render() {
     return (
       <Page className={Styles.page}>
-        <Title>Matt Bell</Title>
+        <Title>Maisie Bell</Title>
         <Body>Software Engineer</Body>
         <Body>London, UK</Body>
       </Page>

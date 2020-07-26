@@ -32,7 +32,7 @@ const mdxMapping = {
 const Page = ({
   children,
   title = "",
-  description = "Matt Bell is a software engineer living in London, UK.",
+  description = "Maisie Bell is a software engineer living in London, UK.",
   match = {},
   padding = false,
   className = "",
@@ -46,7 +46,7 @@ const Page = ({
       {...rest}
     >
       <Helmet>
-        <title>{title && `${title} -`} Matt Bell</title>
+        <title>{title && `${title} -`} Maisie Bell</title>
         <meta name="description" content={description} />
       </Helmet>
       {title && <Title>{title}</Title>}

@@ -10,7 +10,7 @@ const Overlay = ({ children, title = "", padding = false, className = "" }) => {
       )}
     >
       <Helmet>
-        <title>{title && `${title} -`} Matt Bell</title>
+        <title>{title && `${title} -`} Maisie Bell</title>
       </Helmet>
       {children}
     </article>

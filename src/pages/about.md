@@ -18,25 +18,31 @@ the [Kubernetes](https://kubernetes.io) orchestration tool.
 
 ## Experience
 
-See my <a isExternal href="/files/curriculum_vitae-matt_bell.pdf">CV</a> for a formal
+See my <a isExternal href="/files/curriculum_vitae-maisie_bell.pdf">CV</a> for a formal
 copy of my work experience, and my email (external link).
+
+### Apple Inc
+
+**Site Reliability Engineer**, January 2020 to present
+
+I'm working ""
 
 ### Limejump Ltd.
 
-**Full Stack Developer**, June 2019 to present
+**Full Stack Developer**, June 2019 to December 2020
 
-I'm working on the energy trading and dispatching platforms for the business.
-Currently I'm also leading ongoing work to migrate team-owned services from
-Amazon ECS to Kubernetes, to align with wider business strategy and to allow
-the team to increase release cadence and reliability.
+I worked on the energy trading and dispatching platforms for the business.
+I also led work to migrate team-owned services from Amazon ECS to Kubernetes, to
+align with wider business strategy and to allow the team to increase release
+cadence and reliability.
 
-I set up and am running the internal [Go](https://golang.org) Special Interest
-Group, a slack channel and fortnightly meeting where developers working on Go
-projects can ask questions, get advice, and show off things they have been
-working on. It also provides us with an opportunity to standardise on libraries
-between teams. This was heavily inspired by the Go Working Group detailed by
-the Sainsbury's technology team in their talk about testing at the
-[Gophers London meetup](https://www.youtube.com/watch?v=zxUYSktrEXc).
+I set up and ran the internal [Go](https://golang.org) Special Interest Group,
+a slack channel and fortnightly meeting where developers working on Go projects
+can ask questions, get advice, and show off things they have been working on. It
+also provided the org with an opportunity to standardise on libraries between
+teams. This was heavily inspired by the Go Working Group detailed by the
+Sainsbury's technology team in their talk about testing at the [Gophers London
+meetup](https://www.youtube.com/watch?v=zxUYSktrEXc).
 
 > Go Working Group
 >
