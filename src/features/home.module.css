@@ -3,7 +3,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: calc(100vw / 3);
+  font-size: calc(100vw / 5);
   word-spacing: 100vw;
   font-family: "AMono";
 }
