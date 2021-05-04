@@ -7,11 +7,10 @@ the [Kubernetes](https://kubernetes.io) orchestration tool.
 
 ## Social Media
 
--   Twitter [mbellgb](https://twitter.com/mbellgb)
+-   Twitter [maisieintech](https://twitter.com/maisieintech)
 -   LinkedIn [mbellcs](https://linkedin.com/in/mbellcs)
 -   GitHub [mbellgb](https://github.com/mbellgb)
--   Instagram [mbellgb](https://instagram.com/mbellgb)
--   Spotify [Profile](https://open.spotify.com/user/logicnotlogical)
+-   Instagram [maisieintech](https://instagram.com/maisieintech)
 -   Glitch 🎏 [mbellgb](https://glitch.com/@mbellgb)
 -   Codepen [mbellgb](https://codepen.io/mbellgb)
 -   Byte [mbell](http://byte.co/mbell)
@@ -25,7 +24,7 @@ copy of my work experience, and my email (external link).
 
 **Site Reliability Engineer**, January 2020 to present
 
-I'm working ""
+I'm working in the Cloud Services organisation at Apple as a site reliability engineer. I get to work with bare metal and kubernetes and a range of languages and codebases, as well as being on call for my team's individual product.
 
 ### Limejump Ltd.
 
