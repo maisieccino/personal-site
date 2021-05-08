@@ -9,7 +9,7 @@ the [Kubernetes](https://kubernetes.io) orchestration tool.
 
 -   Twitter [hiMaisie](https://twitter.com/hiMaisie)
 -   LinkedIn [mbellcs](https://linkedin.com/in/mbellcs)
--   GitHub [mbellgb](https://github.com/mbellgb)
+-   GitHub [hiMaisie](https://github.com/hiMaisie)
 -   Instagram [hiMaisieBell](https://instagram.com/himaisiebell)
 -   Glitch 🎏 [mbellgb](https://glitch.com/@mbellgb)
 -   Codepen [mbellgb](https://codepen.io/mbellgb)
