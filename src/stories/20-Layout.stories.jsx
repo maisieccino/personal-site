@@ -8,7 +8,7 @@ import Background from "./Background";
 
 export default {
   title: "Layout",
-  decorators: [withKnobs]
+  decorators: [withKnobs],
 };
 
 export const page = () => (

@@ -16,7 +16,9 @@ class Data extends Component {
           Places I've been. <Link to="/data/world">View</Link>
         </Body>
         <Header>Beer</Header>
-        <Body>Beers I'm drinking. <Link to="/data/beers">View</Link></Body>
+        <Body>
+          Beers I'm drinking. <Link to="/data/beers">View</Link>
+        </Body>
       </Page>
     );
   }

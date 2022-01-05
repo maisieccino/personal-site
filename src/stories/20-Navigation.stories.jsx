@@ -9,10 +9,10 @@ export default {
       {
         name: "image",
         value: `url("https://unsplash.it/2560/1440/")`,
-        default: true
-      }
-    ]
-  }
+        default: true,
+      },
+    ],
+  },
 };
 
 export const navigationBar = () => <Navigation />;
