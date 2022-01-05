@@ -7,13 +7,13 @@ the [Kubernetes](https://kubernetes.io) orchestration tool.
 
 ## Social Media
 
--   Twitter [hiMaisie](https://twitter.com/hiMaisie)
--   LinkedIn [mbellcs](https://linkedin.com/in/mbellcs)
--   GitHub [hiMaisie](https://github.com/hiMaisie)
--   Instagram [hiMaisieBell](https://instagram.com/himaisiebell)
--   Glitch 🎏 [mbellgb](https://glitch.com/@mbellgb)
--   Codepen [mbellgb](https://codepen.io/mbellgb)
--   Byte [mbell](http://byte.co/mbell)
+- Twitter [hiMaisie](https://twitter.com/hiMaisie)
+- LinkedIn [mbellcs](https://linkedin.com/in/mbellcs)
+- GitHub [hiMaisie](https://github.com/hiMaisie)
+- Instagram [hiMaisieBell](https://instagram.com/himaisiebell)
+- Glitch 🎏 [mbellgb](https://glitch.com/@mbellgb)
+- Codepen [mbellgb](https://codepen.io/mbellgb)
+- Byte [mbell](http://byte.co/mbell)
 
 ## Experience
 

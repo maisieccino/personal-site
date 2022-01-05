@@ -7,7 +7,7 @@ import Background from "./Background";
 
 export default {
   title: "Typography",
-  decorators: [withKnobs]
+  decorators: [withKnobs],
 };
 
 export const header = () => (

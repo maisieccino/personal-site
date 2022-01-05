@@ -14,7 +14,7 @@ export const CardGroup = ({ items }) => {
             enter: styles["card-enter"],
             enterActive: styles["card-enter-active"],
             exit: styles["card-exit"],
-            exitActive: styles["card-exit-active"]
+            exitActive: styles["card-exit-active"],
           }}
           timeout={200}
         >

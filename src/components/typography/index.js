@@ -15,5 +15,5 @@ export {
   ExternalLink,
   Title,
   UnorderedList,
-  ListItem
+  ListItem,
 };

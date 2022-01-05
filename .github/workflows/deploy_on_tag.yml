@@ -2,7 +2,7 @@ name: DeployOnTag
 on:
   push:
     tags:
-    - 'v[0-9]+.[0-9]+.[0-9]+'
+      - "v[0-9]+.[0-9]+.[0-9]+"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,17 +11,17 @@ jobs:
         node-version: [12.x]
       fail-fast: true
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{matrix.node-version}}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install packages
-      run: yarn --pure-lockfile --dev
-    - name: Build and deploy
-      run: |
-        export REACT_APP_VERSION=$(git tag -l --sort=-v:refname | head -n1)
-        git config --global user.email "matt@mbell.me"
-        git config --global user.name "GitHub Actions on behalf of Matt Bell"
-        git remote set-url origin https://${{secrets.GITHUB_ACCESS_TOKEN}}@github.com/mbellgb/personal-site.git
-        yarn run deploy
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{matrix.node-version}}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install packages
+        run: yarn --pure-lockfile --dev
+      - name: Build and deploy
+        run: |
+          export REACT_APP_VERSION=$(git tag -l --sort=-v:refname | head -n1)
+          git config --global user.email "matt@mbell.me"
+          git config --global user.name "GitHub Actions on behalf of Matt Bell"
+          git remote set-url origin https://${{secrets.GITHUB_ACCESS_TOKEN}}@github.com/mbellgb/personal-site.git
+          yarn run deploy

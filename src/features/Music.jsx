@@ -7,7 +7,7 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardGroup
+  CardGroup,
 } from "../components/layout/Card";
 
 const playlistURL =
@@ -18,7 +18,7 @@ const Song = ({ artists = [], name = "", images = [], ...props }) => {
   const imageURL = images.sort((a, b) => b.width - a.width)[0].url;
   return (
     <Card img={imageURL} {...props}>
-      <CardHeader>{artists.map(artist => artist.name).join(", ")}</CardHeader>
+      <CardHeader>{artists.map((artist) => artist.name).join(", ")}</CardHeader>
       <CardBody>{name}</CardBody>
     </Card>
   );
@@ -54,7 +54,7 @@ const Music = () => {
         </Body>
       )}
       <CardGroup
-        items={songs.map(song => (
+        items={songs.map((song) => (
           <Song {...song} />
         ))}
       />

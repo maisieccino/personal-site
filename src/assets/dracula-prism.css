@@ -101,33 +101,27 @@ pre[class*="language-"] {
   white-space: normal;
 }
 
-.limit-300
-{
+.limit-300 {
   height: 300px !important;
 }
 
-.limit-400
-{
+.limit-400 {
   height: 400px !important;
 }
 
-.limit-500
-{
+.limit-500 {
   height: 500px !important;
 }
 
-.limit-600
-{
+.limit-600 {
   height: 600px !important;
 }
 
-.limit-700
-{
+.limit-700 {
   height: 700px !important;
 }
 
-.limit-800
-{
+.limit-800 {
   height: 800px !important;
 }
 
