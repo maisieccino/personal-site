@@ -23,10 +23,18 @@ const Home = () => {
   useEffect(() => {
     (async () => {
       setIsLoading(true);
-      const res = await fetch(apiURL);
-      const json = await res.json();
-      setPosts(json);
-      setIsLoading(false);
+      try {
+        const res = await fetch(apiURL);
+        const json = await res.json();
+        if (!Array.isArray(json)) {
+          setPosts([]);
+        } else {
+          setPosts(json);
+        }
+        setIsLoading(false);
+      } catch (e) {
+        console.err(e);
+      }
     })();
   }, [location])
 
