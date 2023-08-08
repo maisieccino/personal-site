@@ -15,7 +15,7 @@ the [Kubernetes](https://kubernetes.io) orchestration tool.
 
 ## Experience
 
-See my <a isExternal href="/files/curriculum_vitae-maisie_bell.pdf">CV</a> for a formal
+See my [CV](/files/curriculum_vitae-maisie_bell.pdf) for a formal
 copy of my work experience, and my email (external link).
 
 ### Apple Inc

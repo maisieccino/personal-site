@@ -9,7 +9,8 @@ export const ExternalLink = ({ children, to }) => (
 );
 
 export default function Link ({ children, to }) {
-  if (to.match(/^http/)) {
+  // If file or external link
+  if (to.match(/(^http|\.[a-z0-9]+$)/)) {
     return <ExternalLink to={to}>{children}</ExternalLink>;
   }
   return (

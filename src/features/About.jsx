@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 import { Page } from "../components/layout";
 
-/* eslint-disable import/no-webpack-loader-syntax */
 import Document from "../pages/about.md";
 import { Header, Body } from "../components/typography";
 
