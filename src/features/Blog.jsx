@@ -5,7 +5,7 @@ import { Page } from "../components/layout";
 import { SubHeader, Body, Link } from "../components/typography";
 
 /* eslint-disable import/no-webpack-loader-syntax */
-import Document from "!babel-loader!mdx-loader!../pages/blog.md";
+import Document from "../pages/blog.md";
 
 const apiURL = "https://mbell-api.glitch.me/posts/";
 

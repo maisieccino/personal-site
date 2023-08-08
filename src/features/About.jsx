@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { Page } from "../components/layout";
 
 /* eslint-disable import/no-webpack-loader-syntax */
-import Document from "!babel-loader!mdx-loader!../pages/about.md";
+import Document from "../pages/about.md";
 import { Header, Body } from "../components/typography";
 
 class About extends Component {
