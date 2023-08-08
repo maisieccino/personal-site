@@ -23,5 +23,5 @@ jobs:
           export REACT_APP_VERSION=$(git tag -l --sort=-v:refname | head -n1)
           git config --global user.email "maisie@mbell.dev"
           git config --global user.name "GitHub Actions on behalf of Maisie Bell"
-          git remote set-url origin https://${{secrets.GITHUB_ACCESS_TOKEN}}@github.com/hiMaisie/personal-site.git
+          git remote set-url origin https://git:${{secrets.GITHUB_TOKEN}}@github.com/${GITHUB_REPOSITORY}.git
           yarn run deploy
