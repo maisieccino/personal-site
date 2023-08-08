@@ -37,7 +37,7 @@ const Home = () => {
         }
         setIsLoading(false);
       } catch (e) {
-        console.err(e);
+        console.error(e);
       }
     })();
   }, [location]);

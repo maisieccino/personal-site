@@ -33,10 +33,14 @@ const Music = () => {
   useEffect(() => {
     (async () => {
       setIsLoading(true);
-      const res = await fetch(apiURL);
-      const json = await res.json();
-      setSongs(json.tracks);
-      setIsLoading(false);
+      try {
+        const res = await fetch(apiURL);
+        const json = await res.json();
+        setSongs(json.tracks);
+        setIsLoading(false);
+      } catch (e) {
+        console.error(e);
+      }
     })();
   }, [location]);
 

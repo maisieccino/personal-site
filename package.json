@@ -64,7 +64,7 @@
       "\\.md$": "<rootDir>/__mocks__/fileMock.js"
     }
   },
-  "react-snap": {
+  "reactSnap": {
     "skipThirdPartyRequests": true,
     "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"]
   }

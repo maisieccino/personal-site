@@ -34,10 +34,15 @@ const Beers = () => {
   useEffect(() => {
     (async () => {
       setIsLoading(true);
-      const res = await fetch(apiURL);
-      const json = await res.json();
-      setCheckins(json);
-      setIsLoading(false);
+      try {
+        const res = await fetch(apiURL);
+        const json = await res.json();
+        setCheckins(json);
+        setIsLoading(false);
+      }
+      catch (e) {
+        console.error(e);
+      }
     })();
   }, [location]);
 
