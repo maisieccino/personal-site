@@ -8,7 +8,7 @@ export const ExternalLink = ({ children, to }) => (
   </a>
 );
 
-export default ({ children, to }) => {
+export default function Link ({ children, to }) {
   if (to.match(/^http/)) {
     return <ExternalLink to={to}>{children}</ExternalLink>;
   }

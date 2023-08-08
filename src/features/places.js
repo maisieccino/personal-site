@@ -66,4 +66,5 @@ export const DESTINATIONS = [
   },
 ];
 
-export default [LONDON, ...DESTINATIONS];
+const places = [LONDON, ...DESTINATIONS];
+export default places;

@@ -24,7 +24,7 @@ const routes = [
   { path: "/", component: Home, exact: true },
 ];
 
-export default () => {
+export default function Wrapper () {
   const location = useLocation();
   return (
     <div className="container">
