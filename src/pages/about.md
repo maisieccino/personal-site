@@ -5,13 +5,11 @@ the [Kubernetes](https://kubernetes.io) orchestration tool.
 
 ## Social Media
 
-- Twitter [hiMaisie](https://twitter.com/hiMaisie)
+- Semi-professional Twitter [hiMaisie](https://twitter.com/hiMaisie)
 - LinkedIn [mbellcs](https://linkedin.com/in/mbellcs)
 - GitHub [hiMaisie](https://github.com/hiMaisie)
-- Instagram [hiMaisieBell](https://instagram.com/himaisiebell)
-- Glitch 🎏 [mbellgb](https://glitch.com/@mbellgb)
-- Codepen [mbellgb](https://codepen.io/mbellgb)
-- Byte [mbell](http://byte.co/mbell)
+- Personal Instagram [maisieccino](https://instagram.com/maisieccino)
+- Photography Instagram [bokeh.chaser](https://instagram.com/bokeh.chaser)
 
 ## Experience
 
@@ -20,9 +18,12 @@ copy of my work experience, and my email (external link).
 
 ### Apple Inc
 
-**Site Reliability Engineer**, January 2020 to present
+**Site Reliability Engineer**, January 2020 to November 2023
 
-I'm working in the Cloud Services organisation at Apple as a site reliability engineer. I get to work with bare metal and kubernetes and a range of languages and codebases, as well as being on call for my team's individual product.
+I worked in the Cloud Services organisation at Apple as a site reliability
+engineer. I was able to work with bare metal and kubernetes and a range of
+languages and codebases, as well as being on call for my team's service (Object
+Storage).
 
 ### Limejump Ltd.
 
