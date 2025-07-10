@@ -5,9 +5,8 @@ the [Kubernetes](https://kubernetes.io) orchestration tool.
 
 ## Social Media
 
-- Semi-professional Twitter [hiMaisie](https://twitter.com/hiMaisie)
 - LinkedIn [mbellcs](https://linkedin.com/in/mbellcs)
-- GitHub [hiMaisie](https://github.com/hiMaisie)
+- GitHub [maisieccino](https://github.com/maisieccino)
 - Personal Instagram [maisieccino](https://instagram.com/maisieccino)
 - Photography Instagram [bokeh.chaser](https://instagram.com/bokeh.chaser)
 
@@ -15,6 +14,13 @@ the [Kubernetes](https://kubernetes.io) orchestration tool.
 
 See my [CV](/files/curriculum_vitae-maisie_bell.pdf) for a formal
 copy of my work experience, and my email (external link).
+
+### Monzo Bank
+
+**Backend Engineer**, January 2024 to present
+
+Backend engineer in the financial crime collective, working to build services to help
+protect customers from becoming victims of fraud.
 
 ### Apple Inc
 
