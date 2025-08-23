@@ -9,9 +9,9 @@ class Home extends Component {
   render() {
     return (
       <Page className={Styles.page}>
-        <Title>Maisie Bell</Title>
-        <Body>Software Engineer</Body>
+        <Title>Maisie</Title>
         <Body>London, UK</Body>
+        <Body>Note: I'm updating this page soon! Watch this space.</Body>
       </Page>
     );
   }

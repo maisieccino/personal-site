@@ -7,8 +7,7 @@ the [Kubernetes](https://kubernetes.io) orchestration tool.
 
 - LinkedIn [mbellcs](https://linkedin.com/in/mbellcs)
 - GitHub [maisieccino](https://github.com/maisieccino)
-- Personal Instagram [maisieccino](https://instagram.com/maisieccino)
-- Photography Instagram [bokeh.chaser](https://instagram.com/bokeh.chaser)
+- Photography: [maisie](https://glass.photo/maisie)
 
 ## Experience
 
@@ -17,7 +16,7 @@ copy of my work experience, and my email (external link).
 
 ### Monzo Bank
 
-**Backend Engineer**, January 2024 to present
+**Software Engineer**, January 2024 to present
 
 Backend engineer in the financial crime collective, working to build services to help
 protect customers from becoming victims of fraud.
